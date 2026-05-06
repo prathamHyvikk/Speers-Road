@@ -15,6 +15,8 @@ export default function Footer() {
                 height={96}
                 src={"/footLogo.png"}
                 alt="logo"
+                quality={100}
+                unoptimized
               />
             </div>
             <p className="text-sm text-[#919191] leading-[24px] tracking-[7%] max-w-[508px] pr-8 mt-12">

@@ -41,6 +41,8 @@ export default function Navbar() {
             height={85}
             src={"/logo.png"}
             alt="logo"
+            quality={100}
+            unoptimized
           />
         </div>
         <div className="hidden md:flex items-center gap-9">
