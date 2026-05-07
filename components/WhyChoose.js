@@ -63,7 +63,7 @@ export default function WhyChoose() {
           <span className="text-[#C9A84C]">SPEERS ROAD</span> Physiotherapy
         </h2>
         <div className="w-[75px] h-[1px] bg-[#D9AE3F] my-6 "></div>
-        <p className="cormorant text-[#D9AE3F] text-[23px] italic   ">
+        <p className="cormorant text-[#D9AE3F] text-[23px] italic font-medium max-w-[537px]  ">
           We know you have options when it comes to physio in Oakville. Here's
           what makes the difference when you choose us:
         </p>

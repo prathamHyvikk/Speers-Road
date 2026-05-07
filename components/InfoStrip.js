@@ -8,7 +8,7 @@ export default function InfoStrip() {
           </p>
           <div className="">
             <div className="mb-[26px]">
-              <p className="text-white text-[22px] tracking-[7%] ">
+              <p className="text-white text-[22px] tracking-[7%] mb-2 ">
                 Monday – Thursday
               </p>
               <p className="text-[#919191] text-[19px] tracking-[7%]">
@@ -17,14 +17,16 @@ export default function InfoStrip() {
             </div>
 
             <div className="mb-[26px]">
-              <p className="text-white text-[22px] tracking-[7%] ">Friday</p>
+              <p className="text-white text-[22px] tracking-[7%] mb-2 ">
+                Friday
+              </p>
               <p className="text-[#919191] text-[19px] tracking-[7%]">
                 9:00 AM – 5:00 PM
               </p>
             </div>
 
             <div className="mb-[26px]">
-              <p className="text-white text-[22px] tracking-[7%] ">
+              <p className="text-white text-[22px] tracking-[7%]  mb-2">
                 Saturday - Sunday
               </p>
               <p className="text-[#919191] text-[19px] tracking-[7%]">
@@ -40,7 +42,7 @@ export default function InfoStrip() {
           </p>
           <div className="text-sm text-gray-500 ">
             <div className="mb-[26px]">
-              <p className="text-white text-[22px] tracking-[7%] leading-loose ">
+              <p className="text-white text-[22px] tracking-[7%] leading-loose mb-2 ">
                 Oakville Health Centre
               </p>
               <p className="text-[#919191] text-[19px] leading-tight tracking-[7%]">
@@ -62,7 +64,7 @@ export default function InfoStrip() {
           </p>
           <div className="text-sm text-gray-500 ">
             <div className="mb-[26px]">
-              <p className="text-white text-[22px] leading-loose tracking-[7%] ">
+              <p className="text-white text-[22px] leading-loose tracking-[7%] mb-2">
                 Direct Billing Available
               </p>
               <p className="text-[#919191] text-[19px]  leading-tight  tracking-[7%] mb-[26px]">

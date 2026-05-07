@@ -22,7 +22,7 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="pt-[117px] pb-[165px] px-10 bg-white">
       <div className="max-w-[1240px] mx-auto">
-        <div className="flex justify-between items-end mb-12">
+        <div className="flex justify-between items-end mb-[66px]">
           <div>
             <p className="text-sm  uppercase tracking-[18%] text-[#BD911F] mb-3">
               Patient Stories
@@ -61,7 +61,7 @@ export default function Testimonials() {
                 <p className="text-xs  uppercase tracking-[7%] text-[#BD911F]">
                   {t.author}
                 </p>
-                <p className="text-[10px]  uppercase tracking-[7%] text-[#919191]">
+                <p className="text-[11px]  uppercase tracking-[7%] text-[#919191]">
                   {t.location}
                 </p>
               </div>

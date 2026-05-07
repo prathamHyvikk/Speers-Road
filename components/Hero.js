@@ -8,7 +8,7 @@ export default function Hero() {
         style={{ backgroundImage: "url('/hero.jpg')" }}
       />
 
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,8,20,0.98)_0%,rgba(0,8,20,0.95)_20%,rgba(1,19,58,0.85)_55%,rgba(26,50,99,0.5)_75%,rgba(26,50,99,0.2)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,19,58,1)_20%,rgba(0,19,58,0.96)_25%,rgba(3,24,66,0.88)_45%,rgba(26,50,99,0.6)_90%,rgba(26,50,99,0.85)_100%)]" />
       <div className="relative z-10 max-w-[1240px] mx-auto px-10 sm:px-0 py-20 w-full">
         <p className="text-lg  uppercase tracking-[18%] text-[#BD911F] mb-[29px]">
           Move Better. Feel Stronger. Live Without Pain.
@@ -25,7 +25,7 @@ export default function Hero() {
           physiotherapists in Oakville provide hands-on, one-on-one care —
           tailored to your condition, your goals, and your timeline.
         </p>
-        <div className="flex items-center flex-wrap gap-4">
+        <div className="flex items-center flex-wrap gap-[30px]">
           <Link
             href="#book"
             className="bg-[#BD911F] hover:bg-[#b08a38] text-white text-xs font-bold uppercase tracking-widest px-14 py-5 transition-colors"
