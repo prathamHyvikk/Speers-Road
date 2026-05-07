@@ -27,7 +27,7 @@ export default function WhyChoose() {
   return (
     <section id="why" className="grid grid-cols-1 lg:grid-cols-2 ">
       {/* Image side */}
-      <div className="bg-[#00133A]">
+      <div className="relative ">
         <Image
           width={720}
           height={881}
@@ -35,6 +35,25 @@ export default function WhyChoose() {
           src={"/whyChoose.png"}
           alt="whyChoose"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#BD911F] via-[#BD911F]/0  to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center pl-8 pr-9 pb-[26px] ">
+          <div>
+            <p className="text-base text-white  tracking-[18%] uppercase leading-[32px] ">
+              Meet Your Physiotherapist
+            </p>
+            <p className="cormorant text-[#051941] text-[54px] ">
+              Maikal{" "}
+              <span className="italic text-[40px] font-light ">Patel</span>
+            </p>
+          </div>
+
+          <div>
+            <p className="text-[10px] text-white  tracking-[18%] uppercase leading-[20px] ">
+              Experience
+            </p>
+            <p className="cormorant text-[#051941] text-[34px] ">25+ Years</p>
+          </div>
+        </div>
       </div>
 
       {/* Content side */}
