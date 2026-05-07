@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
@@ -20,52 +23,79 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="pt-[117px] pb-[165px] px-10 bg-white">
+    <section
+      id="testimonials"
+      className="pt-[117px] pb-[165px] px-10 bg-white overflow-hidden"
+    >
       <div className="max-w-[1240px] mx-auto">
-        <div className="flex justify-between items-end mb-[66px]">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex justify-between items-end mb-[66px]"
+        >
           <div>
-            <p className="text-sm  uppercase tracking-[18%] text-[#BD911F] mb-3">
+            <p className="text-sm uppercase tracking-[18%] text-[#BD911F] mb-3">
               Patient Stories
             </p>
-            <h2 className="cormorant text-4xl lg:text-[56px]  text-[#051941] leading-tight ">
+
+            <h2 className="cormorant text-4xl lg:text-[56px] text-[#051941] leading-tight">
               What Our <em className="italic text-[#A9821C]">Patients</em>
               <br />
               Are Saying
             </h2>
           </div>
+
           <a
             href="#reviews"
             className="text-sm uppercase tracking-[11%] text-[#D9AE3F] border-b border-[#C9A84C] pb-0.5 hidden md:block"
           >
             Read More Reviews
           </a>
-        </div>
+        </motion.div>
 
+        {/* Testimonials */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {testimonials.map((t) => (
-            <div
-              className="bg-white border-[0.6px] border-[#D9AE3F4D]  p-8 flex flex-col justify-between "
+          {testimonials.map((t, i) => (
+            <motion.div
               key={t.author}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{
+                duration: 0.7,
+                delay: i * 0.15,
+                ease: "easeOut",
+              }}
+              whileHover={{
+                y: -8,
+                transition: { duration: 0.25 },
+              }}
+              className="bg-white border-[0.6px] border-[#D9AE3F4D] p-8 flex flex-col justify-between"
             >
-              <div className=" flex">
+              <div className="flex">
                 <div className="shrink-0">
                   <Image src="/quote.png" alt="Quote" width={24} height={24} />
                 </div>
-                <div className="">
-                  <p className="cormorant text-base text-[#555555] pt-3  italic mb-9">
+
+                <div>
+                  <p className="cormorant text-base text-[#555555] pt-3 italic mb-9">
                     {t.text}
                   </p>
                 </div>
               </div>
+
               <div>
-                <p className="text-xs  uppercase tracking-[7%] text-[#BD911F]">
+                <p className="text-xs uppercase tracking-[7%] text-[#BD911F]">
                   {t.author}
                 </p>
-                <p className="text-[11px]  uppercase tracking-[7%] text-[#919191]">
+
+                <p className="text-[11px] uppercase tracking-[7%] text-[#919191]">
                   {t.location}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

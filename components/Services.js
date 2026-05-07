@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 const services = [
   {
     num: "01",
@@ -36,47 +40,76 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 px-10 bg-[#FAF8F3]">
+    <section id="services" className="py-20 px-10 bg-[#FAF8F3] overflow-hidden">
       <div className="max-w-[1086px] mx-auto">
-        <p className="text-sm  uppercase tracking-[18%] text-[#BD911F] mb-3">
-          What We Offer
-        </p>
-        <h2 className="cormorant text-[56px]  text-[#1E2D40] leading-tight mb-[72px]">
-          Our <em className="italic text-[#C9A84C]">Physiotherapy Services</em>
-          <br />
-          in Oakville
-        </h2>
+        {/* Top Content */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8 }}
+        >
+          <p className="text-sm uppercase tracking-[18%] text-[#BD911F] mb-3">
+            What We Offer
+          </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border border-gray-200 ">
+          <h2 className="cormorant text-[56px] text-[#1E2D40] leading-tight mb-[72px]">
+            Our{" "}
+            <em className="italic text-[#C9A84C]">Physiotherapy Services</em>
+            <br />
+            in Oakville
+          </h2>
+        </motion.div>
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border border-gray-200">
           {services.map((s, i) => (
-            <div
+            <motion.div
               key={s.num}
-              className={`p-8 bg-white hover:bg-[#F8F7F4] transition-colors ${
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{
+                duration: 0.7,
+                delay: i * 0.12,
+                ease: "easeOut",
+              }}
+              whileHover={{ y: -8 }}
+              className={`p-8 bg-white hover:bg-[#F8F7F4] transition-colors duration-300 ${
                 i % 3 !== 2 ? "lg:border-r" : ""
               } ${i < 3 ? "md:border-b" : ""} border-gray-200`}
             >
-              <p className="text-[27px] cormorant   text-[#D9AE3F]">{s.num}</p>
-              <h3 className="cormorant text-[22px]  text-[#051941] mt-5 ">
+              <p className="text-[27px] cormorant text-[#D9AE3F]">{s.num}</p>
+
+              <h3 className="cormorant text-[22px] text-[#051941] mt-5">
                 {s.name}{" "}
               </h3>
+
               <div
-                className="cormorant   text-[#051941] text-[15px] mb-5"
+                className="cormorant text-[#051941] text-[15px] mb-5"
                 dangerouslySetInnerHTML={{ __html: s.suffixName || "" }}
               ></div>
 
-              <p className="text-sm text-[#919191] leading-5 ">{s.desc}</p>
-            </div>
+              <p className="text-sm text-[#919191] leading-5">{s.desc}</p>
+            </motion.div>
           ))}
         </div>
 
-        <div className="text-center mt-10">
+        {/* Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="text-center mt-10"
+        >
           <a
             href="#"
             className="bg-[#051941] hover:bg-[#083284] text-white text-sm font-semibold uppercase tracking-[12%] px-[52px] py-4 transition-colors inline-block"
           >
             View All Services
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
