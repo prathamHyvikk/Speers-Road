@@ -80,7 +80,7 @@ export default function Services() {
               whileHover={{ y: -8 }}
               className={`p-8 bg-white hover:bg-[#F8F7F4] transition-colors duration-300 ${
                 i % 3 !== 2 ? "lg:border-r" : ""
-              } ${i < 3 ? "md:border-b" : ""} border-gray-200`}
+              }  border-b border-gray-200`}
             >
               <p className="text-[27px] cormorant text-[#D9AE3F]">{s.num}</p>
 

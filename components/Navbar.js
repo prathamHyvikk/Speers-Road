@@ -23,10 +23,10 @@ export default function Navbar() {
   const navItems = ["Home", "Services", "About", "Blog", "Contact"];
   return (
     <>
-      <nav className="bg-white border-b border-gray-200 relative z-50">
+      <nav className="fixed lg:relative top-0 left-0 w-full bg-white border-b border-gray-200 z-50 shadow-sm">
         {/* Top bar */}
         <div className="bg-[#0F1E2E] hidden lg:block">
-          <div className="max-w-[1240px] mx-auto px-6 xl:px-0 py-4 flex justify-between items-center text-sm xl:text-lg text-[#C9993A]">
+          <div className="max-w-[1240px]  mx-auto px-6 xl:px-0 py-4 flex justify-between items-center text-sm xl:text-lg text-[#C9993A]">
             <span className="flex items-center flex-wrap">
               <a
                 href="tel:9053393233"
@@ -130,7 +130,7 @@ export default function Navbar() {
         </div>
 
         {/* Sidebar Links */}
-        <div className="flex flex-col p-6 gap-6">
+        <div className="flex flex-col p-6 gap-2">
           {navItems.map((item) => (
             <Link
               key={item}
@@ -162,10 +162,18 @@ export default function Navbar() {
 
           <a
             href="mailto:info@speersroadphysiotherapy.com"
-            className="block text-[#1A3263] text-sm break-all"
+            className="block text-[#1A3263] text-base break-all"
           >
             info@speersroadphysiotherapy.com
           </a>
+
+          <div className="text-[#1A3263] text-base mt-2">
+            Mon - Thu: 9am - 6pm
+            <br />
+            Fri: 9am - 5pm
+            <br />
+            Sat - Sun: By Appointments
+          </div>
         </div>
       </div>
     </>
