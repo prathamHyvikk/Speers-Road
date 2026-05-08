@@ -40,7 +40,10 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 px-10 bg-[#FAF8F3] overflow-hidden">
+    <section
+      id="services"
+      className="py-10 sm:py-20 px-7 sm:px-10 bg-[#FAF8F3] overflow-hidden"
+    >
       <div className="max-w-[1086px] mx-auto">
         {/* Top Content */}
         <motion.div
@@ -53,7 +56,7 @@ export default function Services() {
             What We Offer
           </p>
 
-          <h2 className="cormorant text-[56px] text-[#1E2D40] leading-tight mb-[72px]">
+          <h2 className="cormorant text-4xl sm:text-5xl md:text-[56px] text-[#1E2D40] leading-tight mb-10 sm:mb-[72px]">
             Our{" "}
             <em className="italic text-[#C9A84C]">Physiotherapy Services</em>
             <br />

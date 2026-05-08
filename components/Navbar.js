@@ -2,67 +2,172 @@
 
 import Image from "next/image";
 import Link from "next/link";
-
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 export default function Navbar() {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  // Prevent body scroll when sidebar open
+  useEffect(() => {
+    if (openMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [openMenu]);
+
+  const navItems = ["Home", "Services", "About", "Blog", "Contact"];
   return (
-    <nav className=" bg-white border-b border-gray-200">
-      {/* Top bar */}
-      <div className="bg-[#0F1E2E]  ">
-        <div className="max-w-[1240px] mx-auto px-10 sm:px-0 py-4 flex justify-between items-center text-lg text-[#C9993A]  ">
-          <span>
-            <a
-              href="tel:9053393233"
-              className="hover:text-[#C9A84C] transition-colors font-semibold"
-            >
-              905-339-3233 <span className="text-white px-1 "> | </span>
-            </a>
+    <>
+      <nav className="bg-white border-b border-gray-200 relative z-50">
+        {/* Top bar */}
+        <div className="bg-[#0F1E2E] hidden lg:block">
+          <div className="max-w-[1240px] mx-auto px-6 xl:px-0 py-4 flex justify-between items-center text-sm xl:text-lg text-[#C9993A]">
+            <span className="flex items-center flex-wrap">
+              <a
+                href="tel:9053393233"
+                className="hover:text-[#C9A84C] transition-colors font-semibold"
+              >
+                905-339-3233
+              </a>
 
-            <a
-              href="mailto:info@speersroadphysiotherapy.com"
-              className="hover:text-[#C9A84C] transition-colors font-semibold"
-            >
-              info@speersroadphysiotherapy.com
-            </a>
-          </span>
-          <span>
-            Mon - Thu: 9am - 6pm <span className="text-white px-1 "> | </span>{" "}
-            Fri: 9am - 5pm <span className="text-white px-1 "> | </span> Sat -
-            Sun: By Appointments
-          </span>
+              <span className="text-white px-2">|</span>
+
+              <a
+                href="mailto:info@speersroadphysiotherapy.com"
+                className="hover:text-[#C9A84C] transition-colors font-semibold"
+              >
+                info@speersroadphysiotherapy.com
+              </a>
+            </span>
+
+            <span>
+              Mon - Thu: 9am - 6pm
+              <span className="text-white px-2">|</span>
+              Fri: 9am - 5pm
+              <span className="text-white px-2">|</span>
+              Sat - Sun: By Appointments
+            </span>
+          </div>
         </div>
-      </div>
 
-      {/* Main nav */}
-      <div className="max-w-[1240px] mx-auto px-10 sm:px-0 py-[45px] flex items-center justify-between">
-        <div>
+        {/* Main Navbar */}
+        <div className="max-w-[1240px] mx-auto px-5 sm:px-6 xl:px-0 py-5 lg:py-8 flex items-center justify-between">
+          {/* Logo */}
+          <Link href="/">
+            <Image
+              className="w-[220px] sm:w-[260px] lg:w-[347px]"
+              width={347}
+              height={85}
+              src="/logo.png"
+              alt="logo"
+              quality={100}
+              priority
+            />
+          </Link>
+
+          {/* Desktop Menu */}
+          <div className="hidden lg:flex items-center gap-9">
+            {navItems.map((item) => (
+              <Link
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                className="text-base xl:text-lg uppercase text-[#1A3263] hover:text-[#C9A84C] transition-colors"
+              >
+                {item}
+              </Link>
+            ))}
+
+            <Link
+              href="#book"
+              className="bg-[#C9A84C] hover:bg-[#b08a38] text-white text-base xl:text-lg uppercase px-6 py-3 transition-all duration-300"
+            >
+              Book Now
+            </Link>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setOpenMenu(true)}
+            className="lg:hidden text-[#1A3263]"
+          >
+            <Menu size={34} />
+          </button>
+        </div>
+      </nav>
+
+      {/* Overlay */}
+      <div
+        onClick={() => setOpenMenu(false)}
+        className={`fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 ${
+          openMenu ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      />
+
+      {/* Mobile Sidebar */}
+      <div
+        className={`fixed top-0 right-0 h-full w-[300px] bg-white z-50 shadow-2xl transition-transform duration-500 ease-in-out ${
+          openMenu ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        {/* Sidebar Header */}
+        <div className="flex items-center justify-between px-5 py-5 border-b">
           <Image
-            className="max-w-[347px]"
-            width={347}
-            height={85}
-            src={"/logo.png"}
+            width={180}
+            height={50}
+            src="/logo.png"
             alt="logo"
-            quality={100}
-            unoptimized
+            className="w-[170px]"
           />
+
+          <button onClick={() => setOpenMenu(false)} className="text-[#1A3263]">
+            <X size={30} />
+          </button>
         </div>
-        <div className="hidden md:flex items-center gap-9">
-          {["Home", "Services", "About", "Blog", "Contact"].map((item) => (
+
+        {/* Sidebar Links */}
+        <div className="flex flex-col p-6 gap-6">
+          {navItems.map((item) => (
             <Link
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="text-lg  uppercase  text-[#1A3263] hover:text-[#C9A84C] transition-colors"
+              onClick={() => setOpenMenu(false)}
+              className="text-lg uppercase text-[#1A3263] hover:text-[#C9A84C] transition-colors border-b border-gray-100 pb-3"
             >
               {item}
             </Link>
           ))}
+
           <Link
             href="#book"
-            className="bg-[#C9A84C] hover:bg-[#b08a38] text-white text-lg  uppercase  px-6 py-2.5 transition-colors"
+            onClick={() => setOpenMenu(false)}
+            className="bg-[#C9A84C] hover:bg-[#b08a38] text-white text-center text-lg uppercase px-6 py-3 transition-all duration-300 mt-4"
           >
             Book Now
           </Link>
         </div>
+
+        {/* Mobile Contact Info */}
+        <div className="absolute bottom-0 left-0 w-full border-t p-5 bg-gray-50">
+          <a
+            href="tel:9053393233"
+            className="block text-[#1A3263] font-medium mb-2"
+          >
+            905-339-3233
+          </a>
+
+          <a
+            href="mailto:info@speersroadphysiotherapy.com"
+            className="block text-[#1A3263] text-sm break-all"
+          >
+            info@speersroadphysiotherapy.com
+          </a>
+        </div>
       </div>
-    </nav>
+    </>
   );
 }

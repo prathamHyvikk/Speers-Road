@@ -44,12 +44,12 @@ function CountUp({ value }) {
 export default function Stats() {
   return (
     <div className="bg-[#051941] border-t-[1px] border-[#919191]">
-      <div className="max-w-[1240px] mx-auto px-10 sm:px-0 grid grid-cols-2 md:grid-cols-4">
+      <div className="max-w-[1240px] mx-auto px-10 sm:px-0 grid sm:grid-cols-2 md:grid-cols-4">
         {stats.map((s, i) => (
           <div
             key={s.label}
             className={`text-center py-5 px-4 ${
-              i < 3 ? "border-r-[1px] border-[#919191]" : ""
+              i < 3 ? "md:border-r-[1px] border-[#919191]" : ""
             }`}
           >
             <div className="text-[53px] cormorant font-bold text-[#C9A84C] leading-none mb-2">

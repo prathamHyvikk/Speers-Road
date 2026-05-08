@@ -25,7 +25,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="pt-[117px] pb-[165px] px-10 bg-white overflow-hidden"
+      className="py-10 sm:py-14 xl:pt-[117px] xl:pb-[165px] px-7 sm:px-10 bg-white overflow-hidden"
     >
       <div className="max-w-[1240px] mx-auto">
         <motion.div
@@ -33,7 +33,7 @@ export default function Testimonials() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex justify-between items-end mb-[66px]"
+          className="flex justify-between items-end mb-8 sm:mb-[66px]"
         >
           <div>
             <p className="text-sm uppercase tracking-[18%] text-[#BD911F] mb-3">

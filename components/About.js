@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section id="about" className="py-16 px-10 bg-[#BD911F] overflow-hidden">
+    <section
+      id="about"
+      className="py-10 sm:py-16 px-7 sm:px-10 bg-[#BD911F] overflow-hidden"
+    >
       <div className="max-w-[1240px] mx-auto">
         {/* Heading */}
         <motion.div
@@ -14,7 +17,7 @@ export default function About() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-[634px] text-white mb-7"
         >
-          <p className="text-[52px] cormorant">
+          <p className="text-4xl sm:text-5xl md:text-[52px] cormorant">
             Oakville&apos;s Physiotherapy Clinic
             <span className="text-[#1E2D40] italic"> That Puts You </span>
             First{" "}

@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 
 export default function CtaBanner() {
   return (
-    <section id="book" className="bg-[#BD911F] py-[75px] px-10 overflow-hidden">
+    <section
+      id="book"
+      className="bg-[#BD911F] py-10 sm:py-[75px] px-7 sm:px-10 overflow-hidden"
+    >
       <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
         {/* Left  */}
         <motion.div
@@ -43,7 +46,7 @@ export default function CtaBanner() {
             <Link href="#">Book an Appointment</Link>
           </motion.div>
 
-          <div className="flex justify-between gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <motion.a
               whileHover={{ y: -2 }}
               href="tel:9053392323"

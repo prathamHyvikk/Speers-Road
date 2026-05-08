@@ -6,31 +6,31 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#00133A] pt-16 pb-8 px-10 overflow-hidden">
+    <footer className="bg-[#00133A] pt-14 md:pt-16 pb-8 px-7 sm:px-10  lg:px-10 overflow-hidden">
       <div className="max-w-[1240px] mx-auto">
-        {/* Top Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-16 pb-12 border-b border-white/10">
+        {/*  Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 pb-12 border-b border-white/10">
           {/* Brand */}
           <motion.div
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="col-span-2"
+            className="sm:col-span-2"
           >
             <div>
               <Image
-                className="max-w-[392px]"
+                className="w-[190px] sm:w-[240px] md:w-[300px] lg:w-[392px] h-auto"
                 width={392}
                 height={96}
-                src={"/footLogo.png"}
+                src="/footLogo.png"
                 alt="logo"
                 quality={100}
                 unoptimized
               />
             </div>
 
-            <p className="text-sm text-[#919191] leading-[24px] tracking-[7%] max-w-[508px] pr-8 mt-12">
+            <p className="text-sm sm:text-[15px] text-[#919191] leading-7 tracking-[0.05em] max-w-[508px] mt-8 md:mt-12 pr-0 md:pr-8">
               Speers Road Physiotherapy is a leading physiotherapy clinic in
               Oakville, Ontario, offering a full range of services including
               physiotherapy care, Gunn IMS, dry needling, vestibular
@@ -41,18 +41,18 @@ export default function Footer() {
             </p>
           </motion.div>
 
-          {/* Quick Links */}
+          {/*  Links */}
           <motion.div
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
           >
-            <p className="text-[15px] font-semibold uppercase tracking-[18%] text-[#BD911F] mb-7">
+            <p className="text-sm sm:text-[15px] font-semibold uppercase tracking-[0.18em] text-[#BD911F] mb-6 md:mb-7">
               Quick Links
             </p>
 
-            <nav className="flex flex-col gap-5">
+            <nav className="flex flex-col gap-4 md:gap-5">
               {[
                 "Home",
                 "Our Services",
@@ -72,7 +72,7 @@ export default function Footer() {
                 >
                   <Link
                     href="#"
-                    className="text-[19px] text-[#919191] hover:text-white tracking-[7%] transition-colors w-fit block"
+                    className="text-base sm:text-lg lg:text-[19px] text-[#919191] hover:text-white tracking-[0.05em] transition-colors w-fit block"
                   >
                     {link}
                   </Link>
@@ -88,11 +88,11 @@ export default function Footer() {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
           >
-            <p className="text-[15px] font-semibold uppercase tracking-[18%] text-[#BD911F] mb-7">
+            <p className="text-sm sm:text-[15px] font-semibold uppercase tracking-[0.18em] text-[#BD911F] mb-6 md:mb-7">
               Contact
             </p>
 
-            <div className="text-[19px] text-[#919191] tracking-[7%] transition-colors w-fit space-y-5">
+            <div className="text-base sm:text-lg lg:text-[19px] text-[#919191] tracking-[0.05em] transition-colors space-y-4 md:space-y-5 break-words">
               <p>905-339-2323</p>
 
               <p>Fax: 289-837-2000</p>
@@ -119,11 +119,11 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="pt-12 flex flex-col md:flex-row justify-between items-center gap-4 text-xl text-[#919191] tracking-[7%]"
+          className="pt-8 md:pt-12 flex flex-col lg:flex-row justify-between items-center gap-5 text-sm sm:text-base lg:text-xl text-[#919191] tracking-[0.05em] text-center lg:text-left"
         >
           <span>© 2026 Speers Road Physiotherapy. All Rights Reserved.</span>
 
-          <div className="flex gap-6">
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
             <motion.a
               whileHover={{ y: -2 }}
               href="#"

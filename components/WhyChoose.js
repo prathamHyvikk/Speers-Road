@@ -58,13 +58,15 @@ export default function WhyChoose() {
           className="absolute bottom-0 left-0 right-0 flex justify-between items-center pl-8 pr-9 pb-[26px]"
         >
           <div>
-            <p className="text-base text-white tracking-[18%] uppercase leading-[32px]">
+            <p className="text-xs sm:text-base text-white tracking-[18%] uppercase sm:leading-[32px]">
               Meet Your Physiotherapist
             </p>
 
-            <p className="cormorant text-[#051941] text-[54px]">
+            <p className="cormorant text-[#051941] text-2xl sm:text-[54px]">
               Maikal{" "}
-              <span className="italic text-[40px] font-light">Patel</span>
+              <span className="italic text-xl sm:text-[40px] font-light">
+                Patel
+              </span>
             </p>
           </div>
 
@@ -73,7 +75,9 @@ export default function WhyChoose() {
               Experience
             </p>
 
-            <p className="cormorant text-[#051941] text-[34px]">25+ Years</p>
+            <p className="cormorant text-[#051941] text-[21px] sm:text-[34px]">
+              25+ Years
+            </p>
           </div>
         </motion.div>
       </motion.div>
@@ -84,7 +88,7 @@ export default function WhyChoose() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="bg-[#00133A] px-12 py-20"
+        className="bg-[#00133A] px-7 sm:px-12 py-10 sm:py-20"
       >
         {/* Heading */}
         <motion.div
@@ -93,9 +97,11 @@ export default function WhyChoose() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-[40px] cormorant italic text-white">Why Choose</p>
+          <p className="text-4xl sm:text-[40px] cormorant italic text-white">
+            Why Choose
+          </p>
 
-          <h2 className="cormorant text-[40px] font-bold text-white">
+          <h2 className="cormorant text-4xl sm:text-[40px] font-bold text-white">
             <span className="text-[#C9A84C]">SPEERS ROAD</span> Physiotherapy
           </h2>
 
