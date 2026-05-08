@@ -36,12 +36,12 @@ export default function CtaBanner() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.9, delay: 0.2, ease: "easeOut" }}
-          className="flex flex-col gap-5 shrink-0"
+          className="flex flex-col m-auto md:m-0 gap-5 shrink-0"
         >
           <motion.div
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.96 }}
-            className="block bg-white text-[#BD911F] text-sm uppercase tracking-[18%] px-12 py-[10px] transition-colors text-center"
+            className="block bg-white text-[#BD911F] text-sm uppercase sm:tracking-[18%] px-12 py-[10px] transition-colors text-center"
           >
             <Link href="#">Book an Appointment</Link>
           </motion.div>

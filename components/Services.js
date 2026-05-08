@@ -108,7 +108,7 @@ export default function Services() {
         >
           <a
             href="#"
-            className="bg-[#051941] hover:bg-[#083284] text-white text-sm font-semibold uppercase tracking-[12%] px-[52px] py-4 transition-colors inline-block"
+            className="bg-[#051941] hover:bg-[#083284] text-white text-sm font-semibold uppercase tracking-[12%] px-10 sm:px-[52px] py-4 transition-colors inline-block"
           >
             View All Services
           </a>
