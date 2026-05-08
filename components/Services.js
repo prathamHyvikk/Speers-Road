@@ -77,7 +77,6 @@ export default function Services() {
                 delay: i * 0.12,
                 ease: "easeOut",
               }}
-              whileHover={{ y: -8 }}
               className={`p-8 bg-white hover:bg-[#F8F7F4] transition-colors duration-300 ${
                 i % 3 !== 2 ? "lg:border-r" : ""
               }  border-b border-gray-200`}
