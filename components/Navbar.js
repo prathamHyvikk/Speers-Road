@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
 
@@ -42,6 +43,8 @@ export default function Navbar() {
       link: "/contact",
     },
   ];
+
+  const pathname = usePathname();
   return (
     <>
       <nav className="fixed lg:relative top-0 left-0 w-full bg-white border-b border-gray-200 z-50 shadow-sm">
@@ -97,7 +100,7 @@ export default function Navbar() {
               <Link
                 key={i}
                 href={`${item.link}`}
-                className="text-base xl:text-lg uppercase text-[#1A3263] hover:text-[#C9A84C] transition-colors"
+                className={`text-base xl:text-lg uppercase ${pathname === item.link ? "text-[#C9A84C]" : "text-[#1A3263]"} hover:text-[#C9A84C] transition-colors`}
               >
                 {item.name}
               </Link>
@@ -157,7 +160,7 @@ export default function Navbar() {
               key={i}
               href={`${item.link}`}
               onClick={() => setOpenMenu(false)}
-              className="text-lg uppercase text-[#1A3263] hover:text-[#C9A84C] transition-colors border-b border-gray-100 pb-3"
+              className={`text-lg uppercase ${pathname === item.link ? "text-[#C9A84C]" : "text-[#1A3263]"} hover:text-[#C9A84C] transition-colors border-b border-gray-100 pb-3`}
             >
               {item.name}
             </Link>

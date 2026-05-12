@@ -89,7 +89,7 @@ export default function Physiotherapy() {
 
       {/* --- TREATMENTS  --- */}
       <section className="py-10 sm:py-16 bg-[#BD911F] border-y border-white/5">
-        <div className="max-w-[1086px] mx-auto px-7 sm:px-0">
+        <div className="max-w-[1086px] mx-auto px-10 xl:px-0">
           <div className="mb-5 ">
             <h3 className="cormorant text-4xl md:text-6xl mb-4 ">
               Physiotherapy{" "}
