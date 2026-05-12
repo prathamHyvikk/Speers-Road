@@ -147,7 +147,7 @@ export default function ServiceList() {
 
   return (
     <div className="bg-[#FAF8F3] min-h-screen text-[#1E2D40]  selection:bg-[#C9A84C]/20">
-      <section className="pt-20 pb-10 sm:pb-20 px-7 sm:px-10 ">
+      <section className="pt-10 sm:pt-20 pb-10 sm:pb-20 px-7 sm:px-10 ">
         <div className="max-w-[1240px] mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

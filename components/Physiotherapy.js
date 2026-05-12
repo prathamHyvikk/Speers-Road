@@ -22,7 +22,7 @@ export default function Physiotherapy() {
   ];
 
   return (
-    <div className="bg-[#00133A] text-white selection:bg-[#C9A84C]/30 font-['Jost']">
+    <div className="bg-[#00133A] text-white selection:bg-[#C9A84C]/30 ">
       {/* --- WHAT IS PHYSIOTHERAPY SECTION --- */}
       <section className="py-10 bg-[#FAF8F3] sm:py-20 px-7 sm:px-10">
         <div className="max-w-[1240px] mx-auto">
@@ -123,8 +123,8 @@ export default function Physiotherapy() {
       <section className="py-10 sm:py-20 px-7 sm:px-10">
         <div className="max-w-[1086px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            <div></div>
-            <div></div>
+            <div className="hidden lg:block "></div>
+            <div className="hidden lg:block "></div>
             {/* Session Steps */}
             <div className="lg:col-span-8">
               <h4 className="cormorant text-4xl sm:text-[40px] mb-12 ">
@@ -181,10 +181,6 @@ export default function Physiotherapy() {
           </div>
         </div>
       </section>
-
-      <style jsx global>{`
-        @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;700;900&display=swap");
-      `}</style>
     </div>
   );
 }
