@@ -20,7 +20,28 @@ export default function Navbar() {
     };
   }, [openMenu]);
 
-  const navItems = ["Home", "Services", "About", "Blog", "Contact"];
+  const navItems = [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "Services",
+      link: "/services",
+    },
+    {
+      name: "About",
+      link: "/about",
+    },
+    {
+      name: "Blog",
+      link: "/blog",
+    },
+    {
+      name: "Contact",
+      link: "/contact",
+    },
+  ];
   return (
     <>
       <nav className="fixed lg:relative top-0 left-0 w-full bg-white border-b border-gray-200 z-50 shadow-sm">
@@ -72,13 +93,13 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center gap-9">
-            {navItems.map((item) => (
+            {navItems.map((item, i) => (
               <Link
-                key={item}
-                href={`#${item.toLowerCase()}`}
+                key={i}
+                href={`${item.link}`}
                 className="text-base xl:text-lg uppercase text-[#1A3263] hover:text-[#C9A84C] transition-colors"
               >
-                {item}
+                {item.name}
               </Link>
             ))}
 
@@ -131,14 +152,14 @@ export default function Navbar() {
 
         {/* Sidebar Links */}
         <div className="flex flex-col p-6 gap-2">
-          {navItems.map((item) => (
+          {navItems.map((item, i) => (
             <Link
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={i}
+              href={`${item.link}`}
               onClick={() => setOpenMenu(false)}
               className="text-lg uppercase text-[#1A3263] hover:text-[#C9A84C] transition-colors border-b border-gray-100 pb-3"
             >
-              {item}
+              {item.name}
             </Link>
           ))}
 

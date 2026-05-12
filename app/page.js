@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Stats from "../components/Stats";
 import About from "../components/About";
@@ -7,7 +6,6 @@ import WhyChoose from "../components/WhyChoose";
 import Testimonials from "../components/Testimonials";
 import InfoStrip from "../components/InfoStrip";
 import CtaBanner from "../components/CtaBanner";
-import Footer from "../components/Footer";
 
 import { Jost } from "next/font/google";
 
@@ -20,7 +18,7 @@ const jost = Jost({
 export default function Home() {
   return (
     <>
-      <Navbar />
+     
       <main>
         <Hero />
         <Stats />
@@ -31,7 +29,7 @@ export default function Home() {
         <InfoStrip />
         <CtaBanner />
       </main>
-      <Footer />
+      
     </>
   );
 }
