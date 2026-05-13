@@ -61,20 +61,17 @@ export default function Navbar() {
 
               <span className="text-white px-2">|</span>
 
-              <a
-                href="mailto:info@speersroadphysiotherapy.com"
-                className="hover:text-[#C9A84C] transition-colors font-semibold"
-              >
-                info@speersroadphysiotherapy.com
-              </a>
+              <span className="hover:text-[#C9A84C] transition-colors font-semibold">
+                Same Day Appointments Available
+              </span>
             </span>
 
             <span>
-              Mon - Thu: 9am - 6pm
+              Mon - Fri: 8am - 8pm
               <span className="text-white px-2">|</span>
-              Fri: 9am - 5pm
+              Sat: 8am - 6pm
               <span className="text-white px-2">|</span>
-              Sat - Sun: By Appointments
+              Sun: By Appointments
             </span>
           </div>
         </div>

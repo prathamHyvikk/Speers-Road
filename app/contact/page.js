@@ -240,10 +240,9 @@ const ContactUs = () => {
               </div>
               <div className="space-y-3">
                 {[
-                  { day: "Mon - Thu", hours: "9:00 AM - 6:00 PM" },
-                  { day: "Friday", hours: "9:00 AM - 5:00 PM" },
-                  { day: "Saturday", hours: "8:00 AM - 2:00 PM" },
-                  { day: "Sunday", hours: "Closed" },
+                  { day: "Mon - Fri", hours: "8:00 AM - 8:00 PM" },
+                  { day: "Saturday", hours: "8:00 AM - 6:00 PM" },
+                  { day: "Sunday", hours: "By Appointments" },
                 ].map((item, idx) => (
                   <div
                     key={idx}

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 const stats = [
-  { num: "25+", label: "Years of Excellence" },
+  { num: "35+", label: "Years of Excellence" },
   { num: "5000+", label: "Patients Treated" },
   { num: "8+", label: "Specialist Services" },
   { num: "7", label: "Days a Week" },

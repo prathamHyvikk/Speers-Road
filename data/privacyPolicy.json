@@ -1,0 +1,191 @@
+{
+  "privacyPolicy": {
+    "introPrivacy": {
+      "title": "",
+      "info": [
+        "This Privacy Policy describes the personal information that Advance Therapy PC dba Advance Physical Therapy (hereinafter “APT”, “we”, “us”, or “our”) collects about you, how we use or disclose your information, your rights related to your personal information and how we secure your information.  This Privacy Policy applies to personal information collected, used, or shared by or on behalf of Advance Physical Therapy, including information collected through our website at <a class='text-[#C9A84C]' href='https://www.advancephysicaltherapy.com/a'>https://www.advancephysicaltherapy.com/a</a> and mobile versions of the site (collectively, the “Site”), by email, by phone or other offline method, or anywhere else we display this Privacy Policy (collectively, the “Services”). ",
+
+        "If you are a patient, please also review our Notice of Privacy Practices which sets out our practices in regard to Protected Health Information (PHI).",
+
+        "This Privacy Policy is supplemental to our Terms and Conditions. Do not use the Services if you do not agree with this Privacy Policy, the Terms and Conditions, or any other policies or terms that apply to the Services. "
+      ]
+    },
+
+    "informationCollect": {
+      "title": "Information We Collect and How We Collect It ",
+      "info": [
+        "Personal information is information that directly or indirectly identifies you or can be used to identify you as an individual. We collect information in the following ways:"
+      ]
+    },
+
+    "informationYou": {
+      "title": "Information You Provide",
+      "subInfo": "The personal information we may collect includes:",
+      "points": [
+        "Contact information such as your name, mobile number, email address, physical address, general location, and any other information you may provide us, either through the phone, in a “Contact Us” form, or any other method. This may also include applicable interests and communication preferences. ",
+
+        "Payment information such as your name and credit card / debit card number. Please note that we use third party payment processors to process credit card payments made to us. As such, we do not retain any personally identifiable financial information in connection with credit card payments, such as credit card numbers. Rather, all such information is provided directly by you to our third-party processor. The payment processor’s use of your personal information is governed by their privacy notice. "
+      ]
+    },
+
+    "thirdParty": {
+      "title": "Information Collected from Third Parties. ",
+      "subInfo": "We may receive the same categories of personal information described above from the following third parties: ",
+      "points": [
+        "Social Media: When an individual interacts with the Services through various social media networks, such as when someone “Likes” us on Facebook or follows us or shared our content on Facebook or Instagram, we may receive some information about individuals that they permit the social network to share with third parties. The data we receive is dependent upon an individual’s privacy settings with the social network, and may include your profile information, profile picture, gender, username, user ID associated with your social media account, age range, language, country, and any other information you permit the social network to share with third parties. Individuals should always review and, if necessary, adjust their privacy settings on third-party websites and social media networks and services before sharing information and/or linking or connecting them to other services. We use this information to operate, maintain, and provide to you the features and functionality of the Services, as well as to communicate directly with you, such as to send you email messages about products and services that may be of interest to you. ",
+
+        "Service Providers: Our service providers that perform services solely on our behalf, such as marketing providers and payment processors, collect personal information and often share some or all of this information with us. The information may include contact information, demographic information, payment information, information about your communications and related activities, and information about your appointments. We may use this information to administer and facilitate the Services, your appointments, and our marketing activities. "
+      ]
+    },
+
+    "infoCollect": {
+      "title": "Information Collected Automatically.",
+      "info": [
+        "We may also automatically collect certain personal information when you visit or use the Services using pixels, cookies or similar tools. A “cookie” is a small data file stored on your browser if you visit the Site. We use pixels and cookies to collect information such as your device type, browser type, and IP address. We also track content you visit on the Site and duration on specific pages of the Site to help us improve your access to the Site and enhance the Services. Cookies also enable us to track your general location and similar information that typically remains in aggregate form and does not identify you individually. If such information does identify you, we will treat it as personal information subject to this Privacy Policy. We may also use cookies or pixels to collect data with respect to confirmation that a message has been delivered to you, confirmation that you have read a message, and related information about our digital communications.  ",
+
+        "You can adjust your browser settings to disable or reject cookies but if you disable all cookies, you may be unable to access all functionality of the Services. We do not permit third parties to track your online activities over time and across other websites based on your use of the Site.",
+
+        "The Site also uses analytics tools such as Google Analytics, a web analytics service provided by Google, Inc. that uses cookies to help us analyze how users navigate the Site. The information generated by this tool (including IP address) will be transmitted to and stored by Google in aggregate form and used to evaluate use of the Site, compile reports on Site activity and other services relating to Site usage. You can learn more about Google Analytics and how to opt out here: <a class='text-[#C9A84C]' href='https://tools.google.com/dlpage/gaoptout'>https://tools.google.com/dlpage/gaoptout</a>.",
+
+        "To learn more about interest-based advertising and how you may be able to opt-out of some of this advertising, you may wish to visit the Digital Advertising Alliance’s (DAA) resources and/or the Network Advertising Initiative’s (NAI) online resources, at www.aboutads.info/choices  or <a class='text-[#C9A84C]' href='http://www.networkadvertising.org/choices/'>http://www.networkadvertising.org/choices/</a>.  You may also be able to limit interest-based advertising through the settings menu on your mobile device by selecting “limit ad tracking” (iOS) or “opt-out of interest-based ads” (Android).  You may also be able to opt-out of some, but not all, interest-based advertising served by mobile ad networks by visiting <a class='text-[#C9A84C]' href='http://youradchoices.com/appchoices'>http://youradchoices.com/appchoices</a> and downloading the mobile AppChoices app. ",
+
+        "Please note that when you opt out of receiving interest-based advertisements, this does not mean you will no longer see advertisements from us or on the Services.  It means that the online ads that you do see from DAA program participants should not be based on your interests.  We are not responsible for the effectiveness of, or compliance with, any third parties’ opt-out options or programs or the accuracy of their statements regarding their programs. In addition, third parties may still use cookies to collect information about your use of the Services, including for analytics and fraud prevention as well as any other purpose permitted under the DAA’s Principles. "
+      ]
+    },
+
+    "notTrack": {
+      "title": "Do-Not-Track Signals",
+      "info": [
+        "The Site does not currently respond to browser-based “Do Not Track” signals."
+      ]
+    },
+
+    "howUse": {
+      "title": "How We Use Information ",
+      "subInfo": "We use your personal information for our business and commercial purposes, including to:  ",
+      "points": [
+        "Provide the Services and related customer service ",
+        "Manage the Services and Site",
+        "Respond to questions or requests from you, deliver information about the Services, send you text messages (based on your indicated preferences) or otherwise communicate with you",
+        "Enhance the Services and Site to address the needs and interests of our customers",
+        "Prevent fraud and protect the security of our systems",
+        "Conduct research and analysis related to our operations",
+        "Identify and analyze how individuals use the Services",
+        "To enforce our Terms and Conditions, to resolve disputes, to carry out our obligations and enforce our rights, and to protect our business interests and the interests and rights of third parties",
+        "Prevent, investigate, or provide notice of fraud or unlawful or criminal activity",
+        "Comply with contractual and legal obligations and requirements",
+        "To fulfill any other purpose for which you provide personal information",
+        "Comply with law and law enforcement requirements or to protect the legal rights or health or safety of our customers, employees or others"
+      ]
+    },
+
+    "disclosure": {
+      "title": "Disclosure of Personal Information ",
+      "subInfo": "We do not rent or sell your personal information for profit but, when appropriate, may share the categories of your personal information noted above with: ",
+      "points": [
+        "Service providers that help us operate our business, including communications services, marketing and advertising providers, web-hosting services and similar third-party providers. ",
+        "Ad networks and advertising partners, such as social networks, to deliver advertising and personalized content to you on the Services, on other sites and services you may use, and across other devices you may use, as well as provide advertising-related services",
+        "Analytics providers to better understand the demographics of our customers, and to personalize, enhance, and improve the Services. ",
+        "A successor entity, to which we reserve the right to sell, rent, disclose or transfer your personal information, in the event of a corporate merger, consolidation, sale of assets or other corporate changes to Advance Physical Therapy.",
+        "Other third parties as necessary to protect your legal interests, rights or property; to comply with or to satisfy any law, regulation or governmental request; to avoid liability; as directed by you or upon your request; or to protect our rights or property or the health or safety of others."
+      ]
+    },
+
+    "rights": {
+      "title": "Your Rights and Choices ",
+      "subInfo": "You can choose not to give us your personal information but in some cases, we will not be able to provide the Services or respond to your questions or requests without certain information. You also have the following rights and choices with regard to your information and engagement with the Services:",
+      "points": [
+        "Communication Preferences: You can adjust your communication preferences with us at any time by contacting us using the contact information at the bottom of this Privacy Policy. You can also request to be removed from our marketing emails by clicking the “unsubscribe” link in our email messages. You can adjust your preferences for push notifications in the App settings. You can also opt out of our text messaging program by replying “STOP,” “QUIT,” “END,” “CANCEL,” “UNSUBSCRIBE,” or “STOP ALL” to any mobile message from us, as further described in our Text Messaging Terms & Conditions. ",
+
+        "Updates to Your Information: You can correct or update your information by contacting us using the contact information at the bottom of this Privacy Policy. "
+      ]
+    },
+
+    "taxusResidant": {
+      "title": "",
+      "subInfo": "If you are a Texas resident, you may have the following rights in respect to your personal information: ",
+      "points": [
+        "Right to Access: Right to confirm whether we are processing your personal information and to access your personal information.",
+        "Right to Correct: Right to correct inaccuracies in your personal information. ",
+        "Right to Request Deletion: Right to delete personal information provided by or obtain about you.",
+        "Right to Portability: Right to obtain a copy of your personal information that you previously provided to us in a portable and, to the extent technically feasible, readily usable format that allows you to transmit the data to another entity without hindrance, if the personal information is available in a digital format.",
+        "Right to opt out of the processing of your personal data for targeted advertising, sale, or profiling in furtherance of a decision that produces a legal or similarly significant effect.",
+        "Right to appeal: In the event that we decline to take action on a request exercising one of your rights set forth above, you have the right to appeal our decision.  "
+      ]
+    },
+
+    "howExercise": {
+      "title": "How to Exercise Your Privacy Rights",
+      "subInfo": "Please submit a request by either: ",
+      "points": [
+        "Emailing us at contactus@advancephysicaltherapy.com with the subject line, “Consumer Rights Request” or ",
+        "Calling 281-816-3528. "
+      ]
+    },
+
+    "beforeProcess": {
+      "title": "",
+      "info": [
+        "Before processing your request, we will need to verify your identity and confirm you are a Texas resident. In order to verify your identity, we will generally require the matching of sufficient information you provide us to the information we maintain about you in our systems. This process may require us to request additional personal information from you, including, but not limited to, your email address, phone number, and/or date of last transaction on the Services.",
+
+        "In certain circumstances, we may decline a request to exercise the rights described above, particularly where we are unable to verify your identity or locate your information in our systems. If we are unable to comply with all or a portion of your request, we will explain the reasons for declining to comply with the request."
+      ]
+    },
+
+    "authorizedAgent": {
+      "title": "Authorized Agents ",
+      "info": [
+        "You may designate another person to serve as an authorized agent to opt out of processing of your personal information for targeted advertising, sale, or profiling in further of a decision that produces a legal or similarly significant effect, through the designated methods above and if we are able to verify the authorized agent’s authority to act on your behalf."
+      ]
+    },
+
+    "appeal": {
+      "title": "Appealing Privacy Rights Decisions ",
+      "info": [
+        "You may be able to appeal a decision we have made in connection with your privacy rights request. All appeal requests should be submitted by emailing us at <span class='text-[#C9A84C]'>contactus@advancephysicaltherapy.com</span> with the subject line, “Privacy Rights Request Appeal.” In the event that we decline to take action on a request exercising one of your rights set forth above, you have the right to appeal our decision. "
+      ]
+    },
+
+    "protection": {
+      "title": "Protecting Your Information",
+      "info": [
+        "We use physical, administrative, and technical safeguards designed to protect your personal information from unauthorized access, use or disclose. However, because no measure is ever 100% effective when transmitting information over the Internet, we do not guarantee that your information will be secure form theft, loss or unauthorized access.   "
+      ]
+    },
+
+    "retention": {
+      "title": "Data Retention",
+      "info": [
+        "We will usually store the personal information we collected about you for no longer than necessary to fulfill the purposes for which it was collected, and in accordance with our business interests and applicable law. However, if necessary, we may retain personal information for longer periods of time, until set retention periods expire, for instance, where we are required to do so in accordance with legal, tax, and accounting requirements set by forth by law, regulators, or other government authorities.  "
+      ]
+    },
+
+    "thirdParties": {
+      "title": "Links to Third-Party Sites",
+      "info": [
+        "The Site may include links to third-party websites we think may be of interest to you. Please note that these websites are independent from the Site and we are not responsible for the content or privacy practices of such other sites or services. Your use of such third-party sites will be subject to the third-party’s privacy policies.  "
+      ]
+    },
+
+    "international": {
+      "title": "International Users",
+      "info": [
+        "Advance Physical Therapy is located in the United States. The Services are not targeted at individuals outside the United States. If you are visiting the Services from outside the United States and provide us with personal information, please note that your information will be accessed, transferred, stored and processed by Advance Physical Therapy in the United States where the data protection laws may differ from those in the country where you are located. By doing business with us or interacting with the Services, you acknowledge and agree to the transfer of your personal information to the United States and understand that such information will be stored and processed in accordance with this Privacy Policy and the laws of the United States. "
+      ]
+    },
+
+    "children": {
+      "title": "Children’s Privacy",
+      "info": [
+        "The Services are intended for adults over the age of 16, are not intended for use by persons under the age of 16.  If We learn that We have inadvertently collected personal information from anyone under the age of 16, we will delete it.  If you believe that we have collected personal information from anyone under the age of 16, please contact us using one of the methods indicated in the “Contact Us” section below. "
+      ]
+    },
+
+    "updates": {
+      "title": "Updates to this Privacy Policy ",
+      "info": [
+        "We reserve the right to modify this Privacy Policy at any time, so please review it frequently.  Any updates to this Privacy Policy will be posted on the Services and We will indicate the last updated date of the changes at the top of the Privacy Policy. Your continued use of the Services means you accept those changes as of the last updated date. "
+      ]
+    }
+  }
+}
