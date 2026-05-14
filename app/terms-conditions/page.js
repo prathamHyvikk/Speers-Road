@@ -3,7 +3,7 @@ import { termsUse } from "../../data/termsUse.json";
 import TitleParagraph from "../../components/TitleParagraph";
 import SubTitleParagraph from "../../components/SubTitleParagraph";
 
-const page = () => {
+const TermsConditions = () => {
   return (
     <main className="py-20 bg-[#FAF8F3]">
       {/* title */}
@@ -14,25 +14,25 @@ const page = () => {
 
         <div className="bg-white/70  backdrop-blur-sm border border-[#E8E1D3]  p-7 md:p-12 shadow-[0_4px_30px_rgba(0,0,0,0.03)]">
           <div className="max-w-[1240px] mx-auto  md:px-8 py-5 ">
-            <div className="text-[#6F6F6F] text-base font-semibold  leading-[1.9] ">
+            <div className="text-[#6F6F6F] text-base font-semibold uppercase  leading-[1.9] ">
               ARBITRATION NOTICE: SECTION 10 CONTAINS A MANDATORY ARBITRATION
-              PROVISION AND CLASS-ACTION WAIVER, WHICH REQUIRES YOU AND ADVANCE
-              PHYSICAL THERAPY TO RESOLVE MOST DISPUTES AND CLAIMS BY BINDING,
+              PROVISION AND CLASS-ACTION WAIVER, WHICH REQUIRES YOU AND Speers
+              Road Physiotherapy TO RESOLVE MOST DISPUTES AND CLAIMS BY BINDING,
               INDIVIDUAL ARBITRATION AND NOT BY MEANS OF A CLASS ARBITRATION, A
               CLASS ACTION, ANY OTHER KIND OF REPRESENTATIVE PROCEEDING, OR A
               JURY TRIAL.{" "}
             </div>
 
             <div className="text-[#6F6F6F] text-[17px] md:text-[19px] leading-[1.9] mt-5 break-words ">
-              <span className="font-semibold">Advance Therapy PC </span> dba
-              Advance Physical Therapy (hereinafter{" "}
+              <span className="font-semibold">Speers Road Physiotherapy </span> dba
+              Speers Road Physiotherapy (hereinafter{" "}
               <span className="font-semibold">“APT”, “we”, “us”,</span> or{" "}
               <span className="font-semibold">“our”</span>) operates the{" "}
               <a
                 className="text-[#C9A84C] inline"
-                href="https://www.advancephysicaltherapy.com/"
+                href="https://speersroadphysiotherapy.com/"
               >
-                https://www.advancephysicaltherapy.com/
+                https://speersroadphysiotherapy.com/
               </a>{" "}
               website (the <span className="font-semibold">“Site”</span>). These
               Terms of Use (these <span className="font-semibold">“Terms”</span>
@@ -196,4 +196,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default TermsConditions;

@@ -124,21 +124,22 @@ export default function Footer() {
           <span>© 2026 Speers Road Physiotherapy. All Rights Reserved.</span>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-            <motion.a
-              whileHover={{ y: -2 }}
-              href="#"
-              className="hover:text-white/60 transition-colors underline underline-offset-4"
-            >
-              Privacy Policy
-            </motion.a>
-
-            <motion.a
-              whileHover={{ y: -2 }}
-              href="#"
-              className="hover:text-white/60 transition-colors underline underline-offset-4"
-            >
-              Terms & Conditions
-            </motion.a>
+            <motion.div whileHover={{ y: -2 }}>
+              <Link
+                href="/privacy-policy"
+                className="hover:text-white/60 transition-colors underline underline-offset-4"
+              >
+                Privacy Policy
+              </Link>
+            </motion.div>
+            <motion.div whileHover={{ y: -2 }}>
+              <Link
+                href="/terms-conditions"
+                className="hover:text-white/60 transition-colors underline underline-offset-4"
+              >
+                Terms & Conditions
+              </Link>
+            </motion.div>
           </div>
         </motion.div>
       </div>

@@ -27,7 +27,7 @@ export default function Hero() {
 
         <p className="text-[#919191] pe-1 text-lg max-w-[620px] mb-9 leading-[29.9px] animate-fade-up delay-500">
           At Speers Road Physiotherapy, we help you recover faster and get back
-          to the life you love. Since last 25 years the clinic is Serving
+          to the life you love. Since last 35 years the clinic is Serving
           Oakville. Our registered physiotherapists in Oakville provide
           hands-on, one-on-one care — tailored to your condition, your goals,
           and your timeline.
