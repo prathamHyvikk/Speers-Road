@@ -104,7 +104,7 @@ export default function Navbar() {
             ))}
 
             <Link
-              href="#book"
+              href="/contact"
               className="bg-[#C9A84C] hover:bg-[#b08a38] text-white text-base xl:text-lg uppercase px-6 py-3 transition-all duration-300"
             >
               Book Now
@@ -164,7 +164,7 @@ export default function Navbar() {
           ))}
 
           <Link
-            href="#book"
+            href="/contact"
             onClick={() => setOpenMenu(false)}
             className="bg-[#C9A84C] hover:bg-[#b08a38] text-white text-center text-lg uppercase px-6 py-3 transition-all duration-300 mt-4"
           >

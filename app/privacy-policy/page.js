@@ -122,10 +122,10 @@ const PrivacyPolicy = () => {
               </div>
 
               <a
-                href="mailto:contactus@advancephysicaltherapy.com"
+                href="mailto:info@speersroadphysiotherapy.com"
                 className="text-[#1E2D40]   text-[13px]  sm:text-[17px] font-medium hover:text-[#C9A84C] transition-colors duration-200"
               >
-                contactus@advancephysicaltherapy.com
+                info@speersroadphysiotherapy.com
               </a>
             </div>
           </div>

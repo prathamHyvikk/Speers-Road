@@ -26,7 +26,7 @@ const TermsConditions = () => {
             <div className="text-[#6F6F6F] text-[17px] md:text-[19px] leading-[1.9] mt-5 break-words ">
               <span className="font-semibold">Speers Road Physiotherapy </span> dba
               Speers Road Physiotherapy (hereinafter{" "}
-              <span className="font-semibold">“APT”, “we”, “us”,</span> or{" "}
+              <span className="font-semibold">“Speers Road Physiotherapy”, “we”, “us”,</span> or{" "}
               <span className="font-semibold">“our”</span>) operates the{" "}
               <a
                 className="text-[#C9A84C] inline"
